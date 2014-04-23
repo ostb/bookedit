@@ -10,7 +10,7 @@ define([
         editorFontFamily: 'Menlo, Consolas, "Courier New", Courier, monospace',
         editorFontSize: 13,
         maxWidth: 960,
-        defaultContent: "\n\n\n> Written with [StackEdit](" + constants.MAIN_URL + ").",
+        defaultContent: "\n\n\n> Written with [BookEdit](" + constants.MAIN_URL + ").",
         commitMsg: "Published with " + constants.MAIN_URL,
         gdriveMultiAccount: 1,
         gdriveFullAccess: true,
