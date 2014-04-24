@@ -23,10 +23,10 @@ define([
     'ace/requirejs/text!ace/css/editor.css',
     'ace/requirejs/text!ace/theme/textmate.css',
     'ace/ext/spellcheck',
-    'ace/ext/searchbox',
-    'sharejs'
+    'ace/ext/searchbox'
+    
 
-], function($, _, crel, ace, constants, utils, storage, settings, eventMgr, shortcutMgr, mousetrap, bodyIndexHTML, bodyViewerHTML, settingsTemplateTooltipHTML, settingsUserCustomExtensionTooltipHTML, sharejs) {
+], function($, _, crel, ace, constants, utils, storage, settings, eventMgr, shortcutMgr, mousetrap, bodyIndexHTML, bodyViewerHTML, settingsTemplateTooltipHTML, settingsUserCustomExtensionTooltipHTML) {
 
     var core = {};
 
