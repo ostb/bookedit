@@ -62,7 +62,8 @@ requirejs.config({
         'Typo.js': 'bower-libs/Typo.js',
         css: 'bower-libs/require-css/css',
         'css-builder': 'bower-libs/require-css/css-builder',
-        normalize: 'bower-libs/require-css/normalize'
+        normalize: 'bower-libs/require-css/normalize',
+        sharejs: 'libs/share/webclient/share.uncompressed'
     },
     shim: {
         underscore: {

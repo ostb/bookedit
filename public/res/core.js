@@ -23,9 +23,10 @@ define([
     'ace/requirejs/text!ace/css/editor.css',
     'ace/requirejs/text!ace/theme/textmate.css',
     'ace/ext/spellcheck',
-    'ace/ext/searchbox'
+    'ace/ext/searchbox',
+    'sharejs'
 
-], function($, _, crel, ace, constants, utils, storage, settings, eventMgr, shortcutMgr, mousetrap, bodyIndexHTML, bodyViewerHTML, settingsTemplateTooltipHTML, settingsUserCustomExtensionTooltipHTML) {
+], function($, _, crel, ace, constants, utils, storage, settings, eventMgr, shortcutMgr, mousetrap, bodyIndexHTML, bodyViewerHTML, settingsTemplateTooltipHTML, settingsUserCustomExtensionTooltipHTML, sharejs) {
 
     var core = {};
 
@@ -241,7 +242,11 @@ define([
     // Create ACE editor
     var aceEditor;
     function createAceEditor() {
+        //#aria
         aceEditor = ace.edit("wmd-input");
+        sharejs.open('editor', 'text', function(err, doc){
+            doc.attach_ace(aceEditor);
+        });
         aceEditor.setOption("spellcheck", true);
         aceEditor.renderer.setShowGutter(false);
         aceEditor.renderer.setPrintMarginColumn(false);
