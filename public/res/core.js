@@ -244,7 +244,7 @@ define([
     function createAceEditor() {
         //#aria
         aceEditor = ace.edit("wmd-input");
-        sharejs.open('editor', 'text', function(err, doc){
+        window.sharejs.open('editor', 'text', function(err, doc){
             doc.attach_ace(aceEditor);
         });
         aceEditor.setOption("spellcheck", true);

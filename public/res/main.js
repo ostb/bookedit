@@ -63,7 +63,7 @@ requirejs.config({
         css: 'bower-libs/require-css/css',
         'css-builder': 'bower-libs/require-css/css-builder',
         normalize: 'bower-libs/require-css/normalize',
-        ShareJS: 'libs/share/share'
+        ShareJS: 'libs/share/client/share-uncompressed'
     },
     shim: {
         underscore: {
