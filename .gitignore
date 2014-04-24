@@ -4,5 +4,4 @@ node_modules
 Thumbs.db
 public/res/bower-libs
 .DS_Store
-.manifest
-cache*
+public/cache.manifest
