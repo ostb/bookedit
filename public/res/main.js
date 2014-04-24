@@ -63,8 +63,7 @@ requirejs.config({
         css: 'bower-libs/require-css/css',
         'css-builder': 'bower-libs/require-css/css-builder',
         normalize: 'bower-libs/require-css/normalize',
-        ShareJS: 'libs/share/client/share-uncompressed',
-        ShareJSServer: 'libs/share/server/index'
+        ShareJS: 'libs/share/client/share-uncompressed'
     },
     shim: {
         underscore: {
@@ -187,7 +186,7 @@ if (window.baseDir.indexOf('-min') !== -1) {
 // RequireJS entry point. By requiring synchronizer, publisher and
 // media-importer, we are actually loading all the modules
 require(["jquery", "core", "eventMgr", "synchronizer", "publisher", "mediaImporter", "css",
-themeModule, "ShareJS", "ShareJSServer" ], function($, core, eventMgr) {
+themeModule, "ShareJS"], function($, core, eventMgr) {
     
     if(window.noStart) {
         return;
