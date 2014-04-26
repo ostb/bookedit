@@ -15,6 +15,7 @@ define([
     "text!html/bodyViewer.html",
     "text!html/settingsTemplateTooltip.html",
     "text!html/settingsUserCustomExtensionTooltip.html",
+    "sharejs",
     "storage",
     "uilayout",
     'pagedown-ace',
@@ -26,7 +27,7 @@ define([
     'ace/ext/searchbox'
     
 
-], function($, _, crel, ace, constants, utils, storage, settings, eventMgr, shortcutMgr, mousetrap, bodyIndexHTML, bodyViewerHTML, settingsTemplateTooltipHTML, settingsUserCustomExtensionTooltipHTML) {
+], function($, _, crel, ace, constants, utils, storage, settings, eventMgr, shortcutMgr, mousetrap, bodyIndexHTML, bodyViewerHTML, settingsTemplateTooltipHTML, settingsUserCustomExtensionTooltipHTML, sharejs) {
 
     var core = {};
 
@@ -243,6 +244,7 @@ define([
     var aceEditor;
     function createAceEditor() {
         //#aria
+        debugger;
         aceEditor = ace.edit("wmd-input");
         window.sharejs.open('editor', 'text', function(err, doc){
             doc.attach_ace(aceEditor);
